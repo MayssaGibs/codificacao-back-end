@@ -1,0 +1,18 @@
+{
+    "nome": "jamilly Barbosa",
+    "matricula": "2026TISENAI02",
+    "dataNascimento": "2002-05-14",
+    "curso": "Tecnico em Desenvolvimento de Sistemas",
+    "disciplinas": [
+        {"nome": "Banco de Dados", "nota": 9.5},
+        {"nome": "Banco de Dados", "nota": 8.8}
+    ],
+    "endereco": {
+        "rua": "Rua das Flores",
+        "numero": 123,
+        "bairro": "jardim Felicidade 1",
+        "cidade": "Macapá",
+        "estado": "Amapá",
+        "cep": "6890930"
+    }
+}

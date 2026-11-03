@@ -1,0 +1,21 @@
+{
+    "texo": "Olá, pessoal! Estou feliz em compartilhar que comecei a estudar Banco de Dados ",
+    "autor": "João Silva",
+    "dataPostagem": "2023-10-10",
+    "curtidas": [
+        {"nome": "Anny"},
+
+        {"nome": "Mainara Barbosa"},
+
+        {"nome ": "Mayssa gibson"},
+
+        {"nome": "jamilly Barbosa"}
+    ],
+    "comentarios": [
+        
+           {"autor": "Maria Oliveira"},
+            { "texto": "Parabéns, João! Continue assim!"},
+            {"autor": "Carlos Santos"},
+            {"texto": "legal"}
+    ]
+}
