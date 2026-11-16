@@ -22,8 +22,10 @@ export class Aluno {
   })
   matricula: string;
 
-  @Prop([String])
-  cursos: string;
+  @Prop({
+        default:true,
+    })
+    ativo:boolean
 
 
 }
