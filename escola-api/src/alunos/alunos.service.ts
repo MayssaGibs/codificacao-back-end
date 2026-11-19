@@ -1,10 +1,10 @@
 import { Injectable, NotFoundException, ConflictException, InternalServerErrorException } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
 import { Model } from "mongoose";
-import { CreateAlunoDto } from "./schemas/alunos.schema.js";
+import { MongoServerError } from 'mongodb';
+import { CreateAlunoDto } from "./dto/create-aluno.dto.js";
 import { UpdateAlunoDto } from "./dto/update-aluno.dto.js";
 import { Aluno, AlunoDoc } from "./schemas/alunos.schema.js";
-import { MongoServerError } from 'mongodb';
 
 @Injectable()
 export class AlunosService{
