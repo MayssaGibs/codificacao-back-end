@@ -1,9 +1,8 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, Query, DefaultValuePipe, ParseIntPipe } from "@nestjs/common";
 import { AlunosService } from "./alunos.service.js";
-import { CreateAlunoDto } from "./schemas/alunos.schema.js";
-import { UpdateAlunoDto } from "./dto/update-aluno.dto.js"; 
 import { ApiTags, ApiResponse, ApiOperation, ApiQuery } from "@nestjs/swagger";
-
+import { CreateAlunoDto } from "./dto/create-aluno.dto.js";
+import { UpdateAlunoDto } from "./dto/update-aluno.dto.js";
 
 @ApiTags('alunos')
 @Controller('alunos')
@@ -23,8 +22,8 @@ export class AlunosController {
         status: 400,
         description: 'Requisição inválida ou dados de entrada incorretos/mal formatados',
     })
-    Create(@Body() createAlunoDto: CreateAlunoDto){
-        return this.alunosService.create(createAlunoDto);
+    create(@Body() createAlunoDto: CreateAlunoDto){
+        return this.alunosService.create(createAlunoDto)
     }
 
     // @Get()
@@ -178,4 +177,4 @@ export class AlunosController {
   restore(@Param('id') id: string){
     return this.alunosService.restore(id);
   }
-}
+} 
